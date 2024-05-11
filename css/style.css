@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: darkturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 70px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+}
+
+.cell {
+    border: 1px solid darkturquoise;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 34px;
+}
+
+.cell[data-value='X'] {
+    color: darkred;
+}
+
+.cell[data-value='O'] {
+    color: darkblue;
+}
+
+.container {
+    background-image: url(../img/fon3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.btn {
+    background-color: darkturquoise;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    color: darkblue;
+    display: none;
+}
